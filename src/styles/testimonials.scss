@@ -1,0 +1,98 @@
+.testimonials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5rem 1.25rem 3.25rem;
+    background-color: $grayish-white;
+  
+    gap: 2rem;
+  
+    .testimonials__title{
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: $grayish-blue;
+      margin-bottom: 1.5rem;
+    }
+  
+    .testimonials__client{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  
+      .client__picture{
+        width: 4rem;
+        border-radius: 50%;
+      }
+  
+      .client__testimony{
+        padding: 1.9rem 0 1.8rem;
+        word-wrap: break-word;
+        letter-spacing: -.5px;
+        font-size: 1.05rem;
+        line-height: 1.775rem;
+        color: $very-dark-grayish-blue;
+      }
+  
+      .client__name{
+        font-size: 1rem;
+        color: $very-dark-desaturated-blue;
+      }
+      .client__profession{
+        margin: .65rem 0 1.75rem;
+        font-size: .775rem;
+        color: $grayish-blue;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+      .testimonials{
+          padding: 9.5rem 0 7.9rem;
+          gap: 3.15rem;
+
+          .testimonials__title{
+            font-size: 1.1rem;
+            letter-spacing: .25rem;
+          }
+
+          .testimonials__container{
+              width: 79%;
+              height: 100%;
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              justify-content: flex-start;
+              
+              gap: 1rem;
+
+              .testimonials__client{
+                  justify-content: space-between;
+                  align-items: center;
+
+                  .client__picture{
+                    width: 4.2rem;
+                    margin-bottom: 1.575rem;
+                  }
+
+                  .client__testimony{
+                      font-weight: 600;
+                      font-size: 1.1rem;
+                      line-height: 1.85rem;
+                      margin-bottom: 2.1rem;
+                  }
+                  
+                  .client__name{
+                    font-size: 1.25rem;
+                  }
+
+                  .client__profession{
+                    font-weight: 600;
+                  }
+              }
+          }
+      }
+  }

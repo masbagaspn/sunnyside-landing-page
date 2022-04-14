@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Fraunces:wght@300;400;500;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+html{
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  min-height: 100vh;
+  box-sizing: border-box;
+}

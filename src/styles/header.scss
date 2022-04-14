@@ -1,0 +1,130 @@
+@import 'text.scss';
+
+.header{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1.8rem 1.35rem;
+    text-align: center;
+    position: relative;
+  
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__title{
+        font-family: $fraunces;
+        margin-top: 4.95rem;
+        margin-bottom: 2.65rem;
+        font-size: 2.2rem;
+        font-weight: 900;
+        line-height: 2.7rem;
+        letter-spacing: .35rem;
+        color: $white;
+    }
+
+    .nav__mobile{
+        width: calc(100% - 2.7rem);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $grayish-white;
+        padding: 2.25rem 0;
+        gap: 1.9rem;
+        border-radius: .5rem 0 .5rem .5rem;
+
+        top: 5.9rem;
+        left: 1.25rem;
+
+        .nav__menu__list{
+        font-size: 1.075rem;
+        color: $dark-grayish-blue;
+        }
+        
+        .nav__btn{
+        text-transform: uppercase;
+        font-size: .85rem;
+        background-color: $yellow;
+        outline: none;
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem 1.5rem;
+        }
+
+        &::after{
+        content: "";
+        position: absolute;
+        top: -1.25rem;
+        right: 0;
+        border-right: 1.25rem solid $grayish-white;
+        border-top: 1.25rem solid transparent;
+        }
+    }
+
+    .nav__hide{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .header{
+        background-image: url('../images/desktop/image-header.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 1.85rem 2.1rem;
+
+        .header__title{
+            margin-top: 6rem;
+            font-size: 2.9rem;
+            letter-spacing: .52rem;
+        }
+
+        .header__arrow_icon{
+            width: 1.9rem;
+            margin-top: 2.65rem;
+        }
+
+        .nav__logo{
+            width: 8.9rem;
+        }
+
+        .nav__desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+
+            .nav__menu__list{
+                color: $grayish-white;
+                font-weight: 500;
+                font-family: $barlow;
+                font-size: .95rem;
+
+                &:nth-last-child(1){
+                    background-color: $grayish-white;
+                    margin-right: .5rem;
+                    padding: 1rem 1.6rem;
+                    border-radius: 2rem;
+
+                    font-family: $fraunces;
+                    font-weight: 900;
+                    font-size: .8rem;
+                    color: $very-dark-desaturated-blue;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+

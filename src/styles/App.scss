@@ -1,0 +1,16 @@
+@import 'color.scss', 'text.scss', 'header.scss', 'first-section.scss', 'second-section.scss', 'testimonials.scss', 'grid.scss', 'footer.scss';
+
+body{
+  width: 100%;
+}
+
+.section__title, .section__link, .section__name, .testimonials__title, .client__name, .nav__btn{
+  font-family: $fraunces;
+  color: $very-dark-desaturated-blue;
+  font-weight: 900;
+}
+
+.section__desc, .client__testimony, .client__profession, .list, a, .nav__menu__list{
+  font-family: $barlow;
+  font-weight: 600;
+}
