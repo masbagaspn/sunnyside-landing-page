@@ -1,7 +1,9 @@
 .section__first{
   margin-bottom: 0;
+  width: 100vw;
+
     .section__row1{
-      height: 17.35rem;
+      height: 30rem;
     }
     .section__row2{
       display: flex;
@@ -12,7 +14,7 @@
       word-wrap: break-word;
       background-color: $grayish-white;
 
-      padding: 3.55rem 1.5rem 3.7rem;
+      padding: 3rem 1.5rem 3.7rem;
 
       .section__title{
         margin-bottom: 1.3rem;
@@ -96,14 +98,16 @@
             height: auto;
             flex-basis: 50%;
         }
+
         .section__row2{
             height: 100%;
             width: 50%;
             flex-basis: 50%;
-            padding: 0 9.6rem 0 7rem;
             align-items: flex-start;
             justify-content: flex-start;
             text-align: left;
+            padding: 0;
+            padding: 0 5rem 0 3rem;
             
             .section__title{
                 margin-top: 9rem;
@@ -129,7 +133,7 @@
     .section__transform{
         flex-direction: row-reverse;
         .section__row2{
-            padding: 0 7rem 0 9.6rem;
+            padding: 0 3rem 0 5rem;
         }
     }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer({footer: {logo, lists, socialMedia}}) {
   return (
-    <div className='footer'>
+    <div className='footer' role='contentinfo'>
         <img src={logo} alt="green-logo" className='footer__logo'/>
         <ul>
             {lists.map((list, index) => <li className='footer__list' key={index}><a href='#blank'>{list}</a></li>)}

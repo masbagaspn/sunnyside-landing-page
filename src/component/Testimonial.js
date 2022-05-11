@@ -5,7 +5,7 @@ function Testimonial({testimonial: {name, testimony, profession, profilePicture}
     <div className='testimonials__client'>
         <img className='client__picture' src={profilePicture} alt={`${name}-picture_`} />
         <span className='client__testimony'>{testimony}</span>
-        <h3 className='client__name'>{name}</h3>
+        <span className='client__name'>{name}</span>
         <p className='client__profession'>{profession}</p>
     </div>
   )

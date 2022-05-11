@@ -38,7 +38,7 @@ function Header({lists, header: {title, logo, hamburger, arrowDown}, handleClick
         <header className='header'>
             <nav className='header__nav'>
                 <img className='nav__logo' src={logo} alt="sunnyside-logo"/>
-                {windowWidth <= 676 
+                {windowWidth <= 1024 
                     ? <img src={hamburger} alt="" className='nav__dropdown' onClick={handleClick}/>
                     : ''
                 }

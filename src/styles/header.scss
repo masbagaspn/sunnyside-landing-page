@@ -37,8 +37,8 @@
         justify-content: center;
         align-items: center;
         background-color: $grayish-white;
-        padding: 2.25rem 0;
-        gap: 1.9rem;
+        padding: 2rem 0;
+        gap: 2rem;
         border-radius: .5rem 0 .5rem .5rem;
 
         top: 5.9rem;
@@ -47,6 +47,14 @@
         .nav__menu__list{
         font-size: 1.075rem;
         color: $dark-grayish-blue;
+        padding: .5rem 1rem;
+
+            &:nth-last-child(1){
+                background-color: $yellow;
+                border-radius: 1.5rem;
+                color: $very-dark-desaturated-blue;
+                font-family: $fraunces;
+            }
         }
         
         .nav__btn{
